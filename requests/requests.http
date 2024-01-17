@@ -1,0 +1,10 @@
+# Get token
+POST {{URL}}:{{PORT}}/login
+Content-Type: application/x-www-form-urlencoded
+
+-d username=jon&password=shhh!
+
+# Restricted
+GET {{URL}}:{{PORT}}/restricted
+Authorization: Bearer {{TOKEN}}
+
